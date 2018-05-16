@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy to Staging') {
             when { branch "master" }
-            sh 'echo "DEPLOY"'
+            echo 'DEPLOY'
         }
     }
 }
